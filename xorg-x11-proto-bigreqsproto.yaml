@@ -1,0 +1,15 @@
+Name: xorg-x11-proto-bigreqsproto
+Summary: X.Org X11 Protocol bigreqsproto
+Description: This extension defines a protocol to enable the use of requests that exceed 262140 bytes in length.
+Version: 1.1.1
+Release: 0
+Group: Development/System
+License: MIT
+URL: http://www.x.org
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/proto/bigreqsproto-%{version}.tar.bz2
+
+Provides: bigreqsproto
+Configure: configure
+ConfigOptions:
+    - --libdir=%{_datadir}
